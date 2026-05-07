@@ -654,11 +654,12 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo"><strong>Spencer Family Eye Care</strong> · Benton & McLeansboro, IL</div>
-  <div class="footer-copy">© 2025 Spencer Family Eye Care LLC. All rights reserved.</div>
+  <div class="footer-copy">© <span id="copyright-year"></span> Spencer Family Eye Care LLC. All rights reserved.</div>
   <div class="footer-essilor">Proud Essilor Experts Partner</div>
 </footer>
 
 <script>
+  document.getElementById('copyright-year').textContent = new Date().getFullYear();
   // ── Eye Chart Background Builder & Animator ──
   const rows = [
     { letters: ['E'],                        size: '16rem'  },
